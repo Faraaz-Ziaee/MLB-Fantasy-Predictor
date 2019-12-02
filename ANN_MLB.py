@@ -4,9 +4,10 @@ from keras.layers import Dense
 from keras.wrappers.scikit_learn import KerasClassifier
 from sklearn.model_selection import train_test_split
 import numpy as np
-__main__
+from numpy import loadtxt
 
-dataframe = pf.read_csv("Batting.csv")
+dataframe = loadtxt('Batting_noSB.csv', delimeter=',')
+
 dataframe.head()
 
 
